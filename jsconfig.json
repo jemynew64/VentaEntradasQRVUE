@@ -1,0 +1,19 @@
+// {
+//   "compilerOptions": {
+//     "paths": {
+//       "@/*": ["./src/*"]
+//     }
+//   },
+//   "exclude": ["node_modules", "dist"]
+// }
+
+{
+  "compilerOptions": {
+    "baseUrl": ".",               // 👈 le dices que la raíz es el proyecto
+    "paths": {
+      "@/*": ["src/*"]            // 👈 ahora sí reconoce el alias
+    }
+  },
+  "include": ["src"],             // 👈 le dices qué carpeta analizar
+  "exclude": ["node_modules", "dist"]
+}
